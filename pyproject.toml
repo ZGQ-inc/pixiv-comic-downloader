@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pixiv-comic-downloader"
+version = "1.0.0"
+description = "A generic puzzle slicing/reassembly engine and downloader for Pixiv Comic Store (PUBLUS Reader)"
+readme = "README.md"
+authors = [
+  { name = "ZGQ Inc." }
+]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Multimedia :: Graphics",
+  "Topic :: Internet :: WWW/HTTP :: Indexing/Search"
+]
+dependencies = [
+  "pillow>=10.0.0",
+  "playwright>=1.40.0"
+]
+
+[project.scripts]
+pixiv-comic-dl = "main:main"
+
+[project.urls]
+"Homepage" = ""
